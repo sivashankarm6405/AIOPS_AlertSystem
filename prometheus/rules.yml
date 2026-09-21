@@ -1,0 +1,11 @@
+groups:
+  - name: sample-app-alerts
+    rules:
+      - alert: HighCPUUsage
+        expr: simulated_cpu_usage_percent > 80
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is {{ $value | printf \"%.1f\" }}% on {{ $labels.instance }}"
