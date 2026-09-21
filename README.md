@@ -1,6 +1,6 @@
 # AIOps Alert System
 
-A small alerting pipeline that detects a problem automatically and sends a message straight to Telegram — no manual checking needed.
+An alerting system pipeline that detects a problem associated with the system automatically and sends a message straight to Telegram via notification.
 
 ## How it works
 
